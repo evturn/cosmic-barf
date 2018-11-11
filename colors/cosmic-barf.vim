@@ -41,3 +41,25 @@ let s:base13 = ['#d7ff00', '190']
 let s:base14 = ['#ff5f00', '202']
 let s:base15 = ['#ff0087', '198']
 "}}}
+" Highlight function "{{{
+function! <SID>X(group, fg, bg, attr)
+  if !empty(a:fg)
+    let l:f = ' guifg=' . a:fg[0] . ' ctermfg=' . a:fg[1]
+  else
+    let l:f = ' guifg=NONE  ctermfg=NONE'
+  endif
+  if !empty(a:bg)
+    let l:b = ' guibg=' . a:bg[0] . ' ctermbg=' . a:bg[1]
+  else
+    let l:b = ' guibg=NONE  ctermbg=NONE'
+  endif
+  if !empty(a:attr)
+    let l:a = ' gui=' . attr . ' cterm=' . attr
+  else
+    let l:a = ' gui=NONE  cterm=NONE'
+  endif
+  exec 'highlight ' . a:group . l:f . l:b . l:a
+endfunction
+"}}}
+"
+" vim:fdm=marker:foldlevel=0
