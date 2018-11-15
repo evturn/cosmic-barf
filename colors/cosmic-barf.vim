@@ -138,7 +138,7 @@ call <SID>X('Todo',           s:base09, '',       '')
 call <SID>X('VertSplit',      s:base00, s:base00, '')
 " call <SID>X('Visual',         '',       '',       '')
 " call <SID>X('VisualNOS',      '',       '',       '')
-call <SID>X('WarningMsg',     s:base01, '',       '')
+call <SID>X('WarningMsg',     '',       s:base01, '')
 call <SID>X('Whitespace',     s:base01, '',       '')
 " call <SID>X('WildMenu',       '',       '',       '')
 call <SID>X('keyword',        s:base09, '',       'bold')
@@ -215,5 +215,19 @@ call <SID>X('jsTemplateExpression',      s:base15, '',       '')
 call <SID>X('jsTernaryIfOperator',       s:base15, '',       '')
 call <SID>X('jsThis',                    s:base09, '',       '')
 call <SID>X('jsUndefined',               s:base09, '',       '')
+"}}}
+" NERDTree highlighting "{{{
+" ----------------------------------------------------------------------
+call <SID>X('NERDTreeCWD',       s:base12, '',       'italic')
+call <SID>X('NERDTREEDir',       s:base12, '',       'italic')
+call <SID>X('NERDTreeFile',      s:base09, '',       '')
+call <SID>X('NERDTreeClosable',  s:base13, '',       '')
+call <SID>X('NERDTreeOpenable',  s:base09, '',       '')
+call <SID>X('NERDTreeDirSlash',  s:base09, '',       '')
+call <SID>X('NERDTreeHelp',      s:base06, '',       '')
+call <SID>X('NERDTreeHelpKey',   s:base09, '',       '')
+call <SID>X('NERDTreeHelpTitle', s:base11, '',       'italic')
+"}}}
 "
 " vim:fdm=marker:foldlevel=0
+
