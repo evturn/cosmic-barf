@@ -228,6 +228,13 @@ call <SID>X('NERDTreeHelp',      s:base06, '',       '')
 call <SID>X('NERDTreeHelpKey',   s:base09, '',       '')
 call <SID>X('NERDTreeHelpTitle', s:base11, '',       'italic')
 "}}}
+" XML/JSX "{{{
+call <SID>X('xmlTag',     s:base15, '',       '')
+call <SID>X('xmlTagName', s:base15, '',       '')
+call <SID>X('xmlEndTag',  s:base15, '',       '')
+call <SID>X('xmlAttrib',  s:base08, '',       '')
+call <SID>X('xmlEqual',   s:base15, '',       '')
+"}}}
 "
 " vim:fdm=marker:foldlevel=0
 
