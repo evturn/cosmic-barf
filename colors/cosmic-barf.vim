@@ -318,6 +318,20 @@ call <SID>X('NERDTreeHelp',      s:base06, '',       '')
 call <SID>X('NERDTreeHelpKey',   s:base09, '',       '')
 call <SID>X('NERDTreeHelpTitle', s:base11, '',       'italic')
 "}}}
+" Netrw highlighting "{{{
+" ----------------------------------------------------------------------
+call <SID>X('netrwSpecial',  s:base08, '',       '')
+call <SID>X('netrwClassify', s:base08, '',       '')
+call <SID>X('netrwExe',      s:base04, '',       '')
+call <SID>X('netrwTreeBar',  s:base04, '',       '')
+call <SID>X('netrwPlain',    s:base09, '',       '')
+"}}}
+" Python highlighting "{{{
+" ----------------------------------------------------------------------
+call <SID>X('pythonBuiltinFunc', s:base09, '',       '')
+call <SID>X('pythonBuiltinObj',  s:base09, '',       '')
+call <SID>X('pythonStatement',   s:base15, '',       '')
+"}}}
 " XML/JSX highlightling "{{{
 " ----------------------------------------------------------------------
 call <SID>X('xmlTag',     s:base15, '',       '')
