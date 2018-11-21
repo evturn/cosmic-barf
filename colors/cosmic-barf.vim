@@ -62,6 +62,12 @@ function! <SID>X(group, fg, bg, attr)
   exec 'highlight ' . a:group . l:f . l:b . l:a
 endfunction
 "}}}
+" Highlight link function "{{{
+" ----------------------------------------------------------------------
+function! <SID>Link(from, to)
+  exec 'hi def link ' . a:from . ' ' . a:to
+endfunction
+"}}}
 " Syntax highlighting "{{{
 " ----------------------------------------------------------------------
 call <SID>X('Boolean',        s:base08, '',       '')
@@ -90,10 +96,11 @@ call <SID>X('Float',          s:base07, '',       '')
 call <SID>X('FoldColumn',     s:base02, s:base01, '')
 call <SID>X('Folded',         s:base02, s:base01, '')
 call <SID>X('Function',       s:base13, '',       '')
-call <SID>X('Identifier',     s:base08, '',       '')
+call <SID>X('Identifier',     s:base09, '',       '')
 call <SID>X('Ignore',         s:base01, '',       '')
 call <SID>X('IncSearch',      '',       '',       'underline')
 call <SID>X('Include',        s:base15, '',       '')
+call <SID>X('Keyword',        s:base15, '',       'bold')
 call <SID>X('Label',          s:base15, '',       '')
 call <SID>X('LineNr',         s:base03, '',       '')
 call <SID>X('Macro',          s:base11, '',       '')
@@ -141,11 +148,8 @@ call <SID>X('VertSplit',      s:base00, s:base00, '')
 call <SID>X('WarningMsg',     '',       s:base01, '')
 call <SID>X('Whitespace',     s:base01, '',       '')
 " call <SID>X('WildMenu',       '',       '',       '')
-call <SID>X('keyword',        s:base09, '',       'bold')
-call <SID>X('type',           s:base09, '',       '')
 call <SID>X('Type',           s:base09, '',       '')
 call <SID>X('Typedef',        s:base09, '',       '')
-call <SID>X('typedef',        s:base09, '',       '')
 "}}}
 " CSS highlighting "{{{
 " ----------------------------------------------------------------------
@@ -305,6 +309,15 @@ call <SID>X('jsTemplateExpression',      s:base15, '',       '')
 call <SID>X('jsTernaryIfOperator',       s:base15, '',       '')
 call <SID>X('jsThis',                    s:base09, '',       '')
 call <SID>X('jsUndefined',               s:base09, '',       '')
+
+call <SID>Link('javaScriptBraces',   'jsObjectBraces')
+call <SID>Link('javaScriptFunction', 'jsFunction')
+call <SID>Link('javaScriptGlobal',   'jsGlobalObjects')
+call <SID>Link('javaScriptMember',   'jsGlobalObjects')
+call <SID>Link('javaScriptMessage',  'jsGlobalObjects')
+call <SID>Link('javaScriptNull',     'jsUndefined')
+call <SID>Link('javaScriptNumber',   'jsNumber')
+call <SID>Link('javaScriptReserved', 'Keyword')
 "}}}
 " NERDTree highlighting "{{{
 " ----------------------------------------------------------------------
