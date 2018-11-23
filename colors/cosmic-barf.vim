@@ -323,6 +323,7 @@ call <SID>Link('javaScriptReserved', 'Keyword')
 " ----------------------------------------------------------------------
 call <SID>X('NERDTreeCWD',       s:base12, '',       'italic')
 call <SID>X('NERDTREEDir',       s:base12, '',       'italic')
+call <SID>X('NERDTreeExecFile',  s:base15, '',       '')
 call <SID>X('NERDTreeFile',      s:base09, '',       '')
 call <SID>X('NERDTreeClosable',  s:base13, '',       '')
 call <SID>X('NERDTreeOpenable',  s:base09, '',       '')
@@ -341,9 +342,15 @@ call <SID>X('netrwPlain',    s:base09, '',       '')
 "}}}
 " Python highlighting "{{{
 " ----------------------------------------------------------------------
-call <SID>X('pythonBuiltinFunc', s:base09, '',       '')
-call <SID>X('pythonBuiltinObj',  s:base09, '',       '')
-call <SID>X('pythonStatement',   s:base15, '',       '')
+call <SID>X('pythonBoolean',       s:base07, '',       '')
+call <SID>X('pythonBuiltinFunc',   s:base09, '',       '')
+call <SID>X('pythonBuiltinObj',    s:base07, '',       '')
+call <SID>X('pythonDecorator',     s:base15, '',       '')
+call <SID>X('pythonDecoratorName', s:base08, '',       '')
+call <SID>X('pythonDottedName',    s:base08, '',       '')
+call <SID>X('pythonExceptions',    s:base14, '',       '')
+call <SID>X('pythonStatement',     s:base15, '',       '')
+call <SID>X('pythonStrFormat',     s:base10, '',       '')
 "}}}
 " Shell highlighting "{{{
 " ----------------------------------------------------------------------
