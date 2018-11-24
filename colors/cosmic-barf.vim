@@ -190,6 +190,21 @@ call <SID>X('cssVariable',               s:base13, '',       '')
 call <SID>X('cssVariableValue',          s:base13, '',       '')
 call <SID>X('cssVendor',                 s:base15, '',       '')
 "}}}
+" Git commit "{{{
+" ----------------------------------------------------------------------
+call <SID>X('gitcommitHeader',        s:base05, '',       '')
+call <SID>X('gitcommitDiscardedFile', s:base13, '',       '')
+call <SID>X('gitcommitDiscardedType', s:base09, '',       '')
+call <SID>X('gitcommitNoChanges',     s:base06, '',       '')
+call <SID>X('gitcommitSelected',      '',       '',       '')
+call <SID>X('gitcommitSelectedFile',  s:base11, '',       '')
+call <SID>X('gitcommitSelectedType',  s:base09, '',       '')
+call <SID>X('gitcommitUnmerged',      '',       '',       '')
+call <SID>X('gitcommitUnmergedFile',  s:base13, '',       '')
+call <SID>X('gitcommitUnmergedType',  s:base13, '',       '')
+call <SID>X('gitcommitUntracked',     '',       '',       '')
+call <SID>X('gitcommitUntrackedFile', s:base10, '',       '')
+"}}}
 " Haskell highlighting "{{{
 " ----------------------------------------------------------------------
 call <SID>X('ConId',                 s:base09, '',       '')
@@ -393,4 +408,3 @@ call <SID>X('xmlEqual',   s:base15, '',       '')
 "}}}
 "
 " vim:fdm=marker:foldlevel=0
-
