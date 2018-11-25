@@ -28,7 +28,7 @@ let s:base00 = ['#002b36', '234']
 let s:base01 = ['#003847', '236']
 let s:base02 = ['#004052', '237']
 let s:base03 = ['#005a6f', '238']
-let s:base04 = ['#657b83', '240']
+let s:base04 = s:base01
 let s:base05 = ['#eee8d5', '187']
 let s:base06 = ['#fdf6e3', '230']
 let s:base07 = ['#0087ff', '33']
@@ -151,7 +151,7 @@ call <SID>X('Whitespace',     s:base01, '',       '')
 call <SID>X('Type',           s:base09, '',       '')
 call <SID>X('Typedef',        s:base09, '',       '')
 "}}}
-" CSS highlighting "{{{
+" CSS "{{{
 " ----------------------------------------------------------------------
 call <SID>X('cssAttr',                   s:base10, '',       '')
 call <SID>X('cssClassName',              s:base15, '',       '')
@@ -190,8 +190,9 @@ call <SID>X('cssVariable',               s:base13, '',       '')
 call <SID>X('cssVariableValue',          s:base13, '',       '')
 call <SID>X('cssVendor',                 s:base15, '',       '')
 "}}}
-" Git commit "{{{
+" Git "{{{
 " ----------------------------------------------------------------------
+call <SID>X('gitcommitComment',       s:base01, '',       '')
 call <SID>X('gitcommitHeader',        s:base05, '',       '')
 call <SID>X('gitcommitDiscardedFile', s:base13, '',       '')
 call <SID>X('gitcommitDiscardedType', s:base09, '',       '')
@@ -205,7 +206,7 @@ call <SID>X('gitcommitUnmergedType',  s:base13, '',       '')
 call <SID>X('gitcommitUntracked',     '',       '',       '')
 call <SID>X('gitcommitUntrackedFile', s:base10, '',       '')
 "}}}
-" Haskell highlighting "{{{
+" Haskell "{{{
 " ----------------------------------------------------------------------
 call <SID>X('ConId',                 s:base09, '',       '')
 call <SID>X('haskellBlock',          s:base06, '',       '')
@@ -256,7 +257,22 @@ call <SID>X('hsType',                s:base09, '',       '')
 call <SID>X('hsTypedef',             s:base15, '',       '')
 call <SID>X('hsVarSym',              s:base15, '',       '')
 "}}}
-" JavaScript highlighting "{{{
+" HTML "{{{
+" ----------------------------------------------------------------------
+call <SID>X('htmlArg',     s:base08, '',       '')
+call <SID>X('htmlEndTag',  s:base06, '',       '')
+call <SID>X('htmlH1',      s:base05, '',       '')
+call <SID>X('htmlH2',      s:base05, '',       '')
+call <SID>X('htmlH3',      s:base05, '',       '')
+call <SID>X('htmlH4',      s:base05, '',       '')
+call <SID>X('htmlH5',      s:base05, '',       '')
+call <SID>X('htmlH6',      s:base05, '',       '')
+call <SID>X('htmlTag',     s:base06, '',       '')
+call <SID>X('htmlTagN',    s:base06, '',       '')
+call <SID>X('htmlTagName', s:base15, '',       '')
+call <SID>X('htmlTitle',   s:base05, '',       '')
+"}}}
+" JavaScript "{{{
 " ----------------------------------------------------------------------
 call <SID>X('jsArrowFuncArgs',           s:base14, '',       '')
 call <SID>X('jsArrowFunction',           s:base09, '',       '')
@@ -334,7 +350,7 @@ call <SID>Link('javaScriptNull',     'jsUndefined')
 call <SID>Link('javaScriptNumber',   'jsNumber')
 call <SID>Link('javaScriptReserved', 'Keyword')
 "}}}
-" NERDTree highlighting "{{{
+" NERDTree "{{{
 " ----------------------------------------------------------------------
 call <SID>X('NERDTreeCWD',       s:base12, '',       'italic')
 call <SID>X('NERDTREEDir',       s:base12, '',       'italic')
@@ -347,7 +363,7 @@ call <SID>X('NERDTreeHelp',      s:base06, '',       '')
 call <SID>X('NERDTreeHelpKey',   s:base09, '',       '')
 call <SID>X('NERDTreeHelpTitle', s:base11, '',       'italic')
 "}}}
-" Netrw highlighting "{{{
+" Netrw "{{{
 " ----------------------------------------------------------------------
 call <SID>X('netrwSpecial',  s:base08, '',       '')
 call <SID>X('netrwClassify', s:base08, '',       '')
@@ -355,7 +371,7 @@ call <SID>X('netrwExe',      s:base04, '',       '')
 call <SID>X('netrwTreeBar',  s:base04, '',       '')
 call <SID>X('netrwPlain',    s:base09, '',       '')
 "}}}
-" Python highlighting "{{{
+" Python "{{{
 " ----------------------------------------------------------------------
 call <SID>X('pythonBoolean',       s:base07, '',       '')
 call <SID>X('pythonBuiltinFunc',   s:base09, '',       '')
@@ -367,7 +383,7 @@ call <SID>X('pythonExceptions',    s:base14, '',       '')
 call <SID>X('pythonStatement',     s:base15, '',       '')
 call <SID>X('pythonStrFormat',     s:base10, '',       '')
 "}}}
-" Shell highlighting "{{{
+" Shell "{{{
 " ----------------------------------------------------------------------
 call <SID>X('bashStatement',    s:base15, '',       '')
 call <SID>X('shArithmetic',     s:base07, '',       '')
@@ -398,7 +414,7 @@ call <SID>X('shStatement',      s:base15, '',       '')
 call <SID>X('shVarAssign',      s:base15, '',       '')
 call <SID>X('shVariable',       s:base05, '',       '')
 "}}}
-" XML/JSX highlightling "{{{
+" XML/JSX "{{{
 " ----------------------------------------------------------------------
 call <SID>X('xmlTag',     s:base15, '',       '')
 call <SID>X('xmlTagName', s:base15, '',       '')
