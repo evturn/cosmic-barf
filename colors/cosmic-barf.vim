@@ -21,6 +21,7 @@ if has('syntax_on')
   syntax reset
 endif
 let g:colors_name = 'cosmic-barf'
+set background=dark
 "}}}
 " GUI & Term Palettes "{{{
 " ----------------------------------------------------------------------
@@ -131,7 +132,7 @@ call <SID>X('SpellBad',       '',       s:base01, '')
 call <SID>X('SpellCap',       s:base13, '',       '')
 call <SID>X('SpellRare',      '',       s:base01, '')
 call <SID>X('StatusLine',     '',       s:base01, '')
-call <SID>X('StatusLineNC',   s:base01, '',       '')
+call <SID>X('StatusLineNC',   s:base01, s:base01, '')
 call <SID>X('Statement',      s:base15, '',       '')
 call <SID>X('StorageClass',   s:base15, '',       '')
 call <SID>X('String',         s:base11, '',       '')
