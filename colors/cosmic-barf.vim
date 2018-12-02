@@ -12,7 +12,7 @@
 " URL:          https://github.com/evturn/cosmic-barf
 " License:      MIT
 " Created:      Nov 2018
-" Modified:     Nov 2018
+" Modified:     Dec 2018
 "
 " Colorscheme initialization "{{{
 " ----------------------------------------------------------------------
@@ -283,11 +283,14 @@ call <SID>X('htmlTitle',   s:base05, '',       '')
 call <SID>X('jsArrowFuncArgs',           s:base14, '',       '')
 call <SID>X('jsArrowFunction',           s:base09, '',       '')
 call <SID>X('jsAsyncKeyword',            s:base09, '',       'italic')
+call <SID>X('jsBlock',                   s:base06, '',       '')
 call <SID>X('jsBlockLabel',              s:base09, '',       '')
 call <SID>X('jsBlockLabelKey',           s:base09, '',       '')
 call <SID>X('jsBooleanFalse',            s:base08, '',       '')
 call <SID>X('jsBooleanTrue',             s:base08, '',       '')
 call <SID>X('jsBraces',                  s:base15, '',       '')
+call <SID>X('jsBracket',                 s:base06, '',       '')
+call <SID>X('jsBrackets',                s:base06, '',       '')
 call <SID>X('jsBuiltins',                s:base09, '',       '')
 call <SID>X('jsCharacter',               s:base09, '',       '')
 call <SID>X('jsClassBraces',             s:base05, '',       '')
@@ -321,15 +324,18 @@ call <SID>X('jsImport',                  s:base15, '',       '')
 call <SID>X('jsLabel',                   s:base15, '',       '')
 call <SID>X('jsModuleAs',                s:base15, '',       '')
 call <SID>X('jsModuleAsterisk',          s:base15, '',       '')
+call <SID>X('jsModuleKeyword',           s:base06, '',       '')
 call <SID>X('jsNoise',                   s:base10, '',       '')
 call <SID>X('jsNull',                    s:base09, '',       '')
 call <SID>X('jsNumber',                  s:base07, '',       '')
+call <SID>X('jsObject',                  s:base06, '',       '')
 call <SID>X('jsObjectBraces',            s:base05, '',       '')
 call <SID>X('jsObjectFuncName',          s:base09, '',       'italic')
 call <SID>X('jsObjectKey',               s:base06, '',       '')
 call <SID>X('jsObjectKeyComputed',       s:base06, '',       '')
 call <SID>X('jsObjectKeyString',         s:base12, '',       '')
 call <SID>X('jsObjectMethodType',        s:base13, '',       '')
+call <SID>X('jsObjectProp',              s:base06, '',       '')
 call <SID>X('jsObjectStringKey',         s:base12, '',       '')
 call <SID>X('jsParens',                  s:base05, '',       '')
 call <SID>X('jsPrototype',               s:base09, '',       'italic')
@@ -346,6 +352,7 @@ call <SID>X('jsTemplateExpression',      s:base15, '',       '')
 call <SID>X('jsTernaryIfOperator',       s:base15, '',       '')
 call <SID>X('jsThis',                    s:base09, '',       '')
 call <SID>X('jsUndefined',               s:base09, '',       '')
+call <SID>X('jsVariableDef',             s:base06, '',       '')
 
 call <SID>Link('javaScriptBraces',   'jsObjectBraces')
 call <SID>Link('javaScriptFunction', 'jsFunction')
