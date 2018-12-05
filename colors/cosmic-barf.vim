@@ -29,7 +29,7 @@ let s:base00 = ['#002b36', '234']
 let s:base01 = ['#003847', '236']
 let s:base02 = ['#004052', '237']
 let s:base03 = ['#005a6f', '238']
-let s:base04 = s:base01
+let s:base04 = ['#87ffff', '123']
 let s:base05 = ['#eee8d5', '187']
 let s:base06 = ['#fdf6e3', '230']
 let s:base07 = ['#0087ff', '33']
@@ -74,7 +74,7 @@ endfunction
 call <SID>X('Boolean',        s:base08, '',       '')
 call <SID>X('Character',      s:base10, '',       '')
 call <SID>X('ColorColumn',    s:base02, s:base01, '')
-call <SID>X('Comment',        s:base04, '',       '')
+call <SID>X('Comment',        s:base01, '',       '')
 call <SID>X('Conceal',        s:base01, '',       '')
 call <SID>X('Conditional',    s:base15, '',       '')
 call <SID>X('Constant',       s:base08, '',       '')
@@ -206,6 +206,7 @@ call <SID>X('gitcommitNoChanges',     s:base06, '',       '')
 call <SID>X('gitcommitSelected',      '',       '',       '')
 call <SID>X('gitcommitSelectedFile',  s:base11, '',       '')
 call <SID>X('gitcommitSelectedType',  s:base09, '',       '')
+call <SID>X('gitcommitSummary',       s:base04, '',       '')
 call <SID>X('gitcommitUnmerged',      '',       '',       '')
 call <SID>X('gitcommitUnmergedFile',  s:base13, '',       '')
 call <SID>X('gitcommitUnmergedType',  s:base13, '',       '')
@@ -235,7 +236,7 @@ call <SID>X('haskellType',           s:base09, '',       '')
 call <SID>X('haskellTypeRoles',      s:base11, '',       '')
 call <SID>X('haskellWhere',          s:base15, '',       '')
 call <SID>X('hsCharacter',           s:base06, '',       'italic')
-call <SID>X('hsComment',             s:base04, '',       '')
+call <SID>X('hsComment',             s:base01, '',       '')
 call <SID>X('hsConSym',              s:base15, '',       '')
 call <SID>X('hsConditional',         s:base15, '',       '')
 call <SID>X('hsDebug',               s:base11, '',       'undercurl')
@@ -247,7 +248,7 @@ call <SID>X('hsForeign',             s:base11, '',       '')
 call <SID>X('hsImport',              s:base15, '',       '')
 call <SID>X('hsImportMod',           s:base15, '',       '')
 call <SID>X('hsInfix',               s:base15, '',       '')
-call <SID>X('hsLineComment',         s:base04, '',       '')
+call <SID>X('hsLineComment',         s:base01, '',       '')
 call <SID>X('hsMaybe',               s:base09, '',       '')
 call <SID>X('hsModule',              s:base15, '',       '')
 call <SID>X('hsNumber',              s:base07, '',       '')
@@ -381,8 +382,8 @@ call <SID>X('NERDTreeHelpTitle', s:base11, '',       'italic')
 " ----------------------------------------------------------------------
 call <SID>X('netrwSpecial',  s:base08, '',       '')
 call <SID>X('netrwClassify', s:base08, '',       '')
-call <SID>X('netrwExe',      s:base04, '',       '')
-call <SID>X('netrwTreeBar',  s:base04, '',       '')
+call <SID>X('netrwExe',      s:base01, '',       '')
+call <SID>X('netrwTreeBar',  s:base01, '',       '')
 call <SID>X('netrwPlain',    s:base09, '',       '')
 "}}}
 " Python "{{{
