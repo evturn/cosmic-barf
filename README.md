@@ -9,21 +9,40 @@
                \________________________________________________________________________/
 
 ```
-<div style="display: flex; align-items: stretch;">
-  <div style="height: 350px; width: 100%; background-color: #002b36;"></div>
-  <div style="height: 350px; width: 100%; background-color: #003847;"></div>
-  <div style="height: 350px; width: 100%; background-color: #004052;"></div>
-  <div style="height: 350px; width: 100%; background-color: #005a6f;"></div>
-  <div style="height: 350px; width: 100%; background-color: #657b83;"></div>
-  <div style="height: 350px; width: 100%; background-color: #00ffaf;"></div>
-  <div style="height: 350px; width: 100%; background-color: #afffaf;"></div>
-  <div style="height: 350px; width: 100%; background-color: #eee8d5;"></div>
-  <div style="height: 350px; width: 100%; background-color: #fdf6e3;"></div>
-  <div style="height: 350px; width: 100%; background-color: #00ffff;"></div>
-  <div style="height: 350px; width: 100%; background-color: #5fd7ff;"></div>
-  <div style="height: 350px; width: 100%; background-color: #5fafff;"></div>
-  <div style="height: 350px; width: 100%; background-color: #0087ff;"></div>
-  <div style="height: 350px; width: 100%; background-color: #ff0087;"></div>
-  <div style="height: 350px; width: 100%; background-color: #ff5f00;"></div>
-  <div style="height: 350px; width: 100%; background-color: #d7ff00;"></div>
+
+# Installation
+
+### Option 1: Manual installation
+
+1.  After downloading the vim script or package, move the
+    `cosmic-barf.vim` file to the `.vim/colors` directory.
+
+        $ cd cosmic-barf/colors
+        $ mv cosmic-barf.vim ~/.vim/colors/
+
+### Option 2: Pathogen installation
+
+1.  Move or clone the `cosmic-barf` directory so that it is 
+    a subdirectory of the `.vim/bundle` directory.
+
+        $ cd ~/.vim/bundle
+        $ git clone git@github.com:evturn/cosmic-barf.git
+
+### Modify .vimrc
+
+```vimscript
+syntax enable
+set background=dark
+colorscheme cosmic-barf
+let g:colors_name = 'cosmic-barf'
+```
+
+# Screenshots
+
+<div align="center">
+  <img src="./screenshots/javascript.png" width="420px;">
+  <img src="./screenshots/vim.png" width="420px;">
+</div>
+<div align="center">
+  <img src="./screenshots/haskell.png">
 </div>
