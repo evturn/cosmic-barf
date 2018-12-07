@@ -69,6 +69,12 @@ function! <SID>Link(from, to)
   exec 'hi def link ' . a:from . ' ' . a:to
 endfunction
 "}}}
+" Highlight filetype link function "{{{
+" ----------------------------------------------------------------------
+function! <SID>FTLink(ft, from, to)
+  exec 'autocmd filetype ' . a:ft . ' hi def link ' . a:from . ' ' . a:to
+endfunction
+"}}}
 " Syntax highlighting "{{{
 " ----------------------------------------------------------------------
 call <SID>X('Boolean',        s:base08, '',       '')
@@ -399,6 +405,9 @@ call <SID>X('NERDTreeDirSlash',  s:base09, '',       '')
 call <SID>X('NERDTreeHelp',      s:base06, '',       '')
 call <SID>X('NERDTreeHelpKey',   s:base09, '',       '')
 call <SID>X('NERDTreeHelpTitle', s:base11, '',       'italic')
+
+call <SID>FTLink('nerdtree', 'Cursor',     'Cursor')
+call <SID>FTLink('nerdtree', 'CursorLine', 'Cursor')
 "}}}
 " Netrw "{{{
 " ----------------------------------------------------------------------
